@@ -377,7 +377,7 @@
   const qcache = JSON.parse(store.get("adhkar-quran")||"{}");
   async function getAyah(s,a){
     const key=s+":"+a; if(qcache[key]) return qcache[key];
-    const r=await fetch(`https://api.alquran.cloud/v1/ayah/${key}/quran-uthmani`); const j=await r.json();
+    let j={}; for(let k=0;k<6;k++){ try{ const r=await fetch(`https://api.alquran.cloud/v1/ayah/${key}/quran-uthmani`); j=await r.json(); if(j.status==="OK") break; }catch(e){} await new Promise(z=>setTimeout(z,1200*(k+1))); }
     if(j.status!=="OK") throw new Error("bad"); qcache[key]=j.data.text; store.set("adhkar-quran",JSON.stringify(qcache)); return j.data.text;
   }
   function stripB(t){ const w=t.split(" "); return (w[0]&&w[0].startsWith("بِسْمِ")&&w.length>4)? w.slice(4).join(" ") : t; }
