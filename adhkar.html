@@ -394,7 +394,7 @@
           parts.push(it.a[0]===it.a[1] && it.from ? t : t+` <span class="end">﴿${toAr(a)}﴾</span>`);
         }
         el.innerHTML = it.from ? "﴿ "+parts.join(" ")+" ﴾" : parts.join(" ");
-      }catch(e){ el.textContent="تعذّر تحميل الآيات، تأكدي من اتصالك بالإنترنت ثم حدّثي الصفحة."; }
+      }catch(e){ el.textContent="تعذّر تحميل الآيات، يُرجى التأكد من الاتصال بالإنترنت ثم تحديث الصفحة."; }
     }
   }
   render();
