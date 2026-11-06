@@ -409,7 +409,7 @@
     }
     box.innerHTML = ayahs.map(a=>{
       const t = a.n===1 ? stripBasmala(a.t) : a.t;
-      return `<span class="ayah">${t}</span><span class="end">﴿${toAr(a.n)}﴾</span> `;
+      return `<p class="aline" style="margin:0 0 .35em;padding-bottom:.3em;border-bottom:1px dashed #f1e2d2;text-align:right"><span class="ayah">${t}</span><span class="end">﴿${toAr(a.n)}﴾</span></p>`;
     }).join("");
   }
 
