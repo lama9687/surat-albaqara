@@ -402,7 +402,7 @@
         ayahs = j.data.ayahs.map(a=>({n:a.numberInSurah, t:a.text}));
         store.set("surah-"+s.n, JSON.stringify(ayahs));
       }catch(e){
-        box.innerHTML = `<div class="status">تعذّر تحميل السورة. تأكدي من اتصالك بالإنترنت.<br><button class="retry" id="retry">إعادة المحاولة</button></div>`;
+        box.innerHTML = `<div class="status">تعذّر تحميل السورة. يُرجى التأكد من الاتصال بالإنترنت.<br><button class="retry" id="retry">إعادة المحاولة</button></div>`;
         $("#retry").onclick = ()=>loadSurah(key);
         return;
       }
