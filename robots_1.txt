@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lama9687.github.io/surat-albaqara/sitemap.xml
