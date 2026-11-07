@@ -409,7 +409,7 @@
     }
     box.innerHTML = ayahs.map(a=>{
       const t = a.n===1 ? stripBasmala(a.t) : a.t;
-      return `<p class="aline" style="margin:0 0 .35em;padding-bottom:.3em;border-bottom:1px dashed #f1e2d2;text-align:right"><span class="ayah">${t}</span><span class="end">﴿${toAr(a.n)}﴾</span></p>`;
+      return `<p class="aline" data-n="${a.n}" style="margin:0 0 .35em;padding-bottom:.3em;border-bottom:1px dashed #f1e2d2;text-align:right"><span class="ayah">${t}</span><span class="end">﴿${toAr(a.n)}﴾</span></p>`;
     }).join("");
   }
 
@@ -421,5 +421,5 @@
   }
 })();
 </script>
-</body>
+<style>.end{cursor:pointer;border-radius:8px;padding:0 2px}.end:hover{background:#fde6ee}.aline.mark{background:#f6dccb;border-radius:14px;box-shadow:inset 0 0 0 2px #e8b49a;padding:4px 8px}.bm-hint{text-align:center;color:#8f8079;font-size:.88rem;margin:0 0 12px}</style><script>(function(){var page=document.body.dataset.surah,box=document.getElementById("mushaf");if(!page||!box)return;var key="bm-"+page;function get(){try{return localStorage.getItem(key)}catch(e){return null}}function set(v){try{v?localStorage.setItem(key,v):localStorage.removeItem(key)}catch(e){}}var hint=document.createElement("p");hint.className="bm-hint";hint.textContent="💡 الضغط على رقم الآية يحفظ مكان التوقف، وعند العودة تنتقل الصفحة إليه تلقائيًا. الضغط مرة أخرى يلغي العلامة.";box.parentNode.insertBefore(hint,box);function apply(scroll){box.querySelectorAll(".aline.mark").forEach(function(e){e.classList.remove("mark")});var n=get();if(!n)return;var el=box.querySelector('.aline[data-n="'+n+'"]');if(el){el.classList.add("mark");if(scroll)setTimeout(function(){el.scrollIntoView({behavior:"smooth",block:"center"})},300)}}box.addEventListener("click",function(e){var end=e.target.closest(".end");if(!end)return;var line=end.closest(".aline");if(!line)return;var n=line.dataset.n;set(get()===n?null:n);apply(false)});var done=false;if(box.querySelector(".aline")){done=true;apply(true)}new MutationObserver(function(){if(!done&&box.querySelector(".aline")){done=true;apply(true)}}).observe(box,{childList:true})})();</script></body>
 </html>
