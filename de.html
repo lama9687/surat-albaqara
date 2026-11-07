@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dhikr und Morgen- & Abend-Adhkar auf Deutsch mit arabischem Text</title>
+<meta name="description" content="Dhikr und die Adhkar für Morgen und Abend auf Deutsch, mit arabischem Originaltext und Zähler für jedes Gedenken. Quranverse nach der Übersetzung von Bubenheim & Elyas.">
+<link rel="canonical" href="https://lama9687.github.io/surat-albaqara/de.html">
+<meta property="og:title" content="Dhikr und Morgen- & Abend-Adhkar auf Deutsch mit arabischem Text">
+<meta property="og:description" content="Dhikr und die Adhkar für Morgen und Abend auf Deutsch, mit arabischem Originaltext und Zähler für jedes Gedenken. Quranverse nach der Übersetzung von Bubenheim & Elyas.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lama9687.github.io/surat-albaqara/de.html">
+<meta property="og:locale" content="de_DE">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Dhikr und Morgen- & Abend-Adhkar auf Deutsch mit arabischem Text","description":"Dhikr und die Adhkar für Morgen und Abend auf Deutsch, mit arabischem Originaltext und Zähler für jedes Gedenken. Quranverse nach der Übersetzung von Bubenheim & Elyas.","inLanguage":"de","url":"https://lama9687.github.io/surat-albaqara/de.html"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Aref+Ruqaa:wght@400;700&family=Baloo+Bhaijaan+2:wght@500;700&family=Nunito:wght@500;700;800&family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#0f4c3a; --green-2:#17694f; --gold:#b8913b; --gold-soft:#f3e7c9;
+    --paper:#fbf8f1; --card:#fffdf8; --ink:#1f2a24; --muted:#6b756f; --line:#e7dfcc;
+    --radius:18px; --qsize:30px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:"Tajawal",system-ui,sans-serif;line-height:1.8}
+  a{color:inherit}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+  button{font:inherit;cursor:pointer}
+
+  /* header */
+  header{background:var(--green);color:#fff;position:sticky;top:0;z-index:30;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:12px}
+  .brand{display:flex;align-items:center;gap:10px;font-family:"Amiri",serif;font-size:1.6rem;font-weight:700;text-decoration:none;color:#fff}
+  .nav nav{display:flex;gap:6px;flex-wrap:wrap}
+  .nav nav a{text-decoration:none;padding:7px 14px;border-radius:999px;font-weight:500;color:#e6efe9}
+  .nav nav a:hover,.nav nav a.on{background:rgba(255,255,255,.14);color:#fff}
+  @media(max-width:640px){.brand span{display:none}.nav nav a{padding:6px 10px;font-size:.92rem}}
+
+  /* hero */
+  .hero{background:var(--green);color:#fff;text-align:center;padding:56px 0 90px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:auto 0 -1px 0;height:60px;background:var(--paper);border-radius:50% 50% 0 0/100% 100% 0 0}
+  .hero .pattern{position:absolute;inset:0;opacity:.09;pointer-events:none}
+  .hero h1{font-family:"Amiri",serif;font-size:clamp(2.4rem,6vw,3.6rem);margin:0 0 6px;position:relative}
+  .hero p{margin:0 auto;max-width:560px;color:#d5e5dc;position:relative}
+  .hero .verse{font-family:"Amiri Quran",serif;font-size:1.6rem;color:var(--gold-soft);margin:22px 0 0;position:relative;line-height:2.2}
+
+  section{padding:40px 0}
+  .sec-title{display:flex;align-items:center;gap:14px;margin:0 0 24px}
+  .sec-title h2{margin:0;font-family:"Amiri",serif;font-size:2rem;color:var(--green)}
+  .sec-title .line{flex:1;height:1px;background:linear-gradient(to left,var(--gold),transparent)}
+
+  /* surah cards */
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  @media(max-width:640px){.cards{grid-template-columns:1fr}}
+  .scard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;text-decoration:none;display:flex;gap:18px;align-items:center;transition:transform .15s,border-color .15s}
+  .scard:hover{transform:translateY(-3px);border-color:var(--gold)}
+  .num{width:58px;height:58px;flex:none;display:grid;place-items:center;font-weight:700;color:var(--green);position:relative}
+  .num svg{position:absolute;inset:0}
+  .scard h3{margin:0;font-family:"Amiri",serif;font-size:1.7rem;color:var(--green)}
+  .scard p{margin:0;color:var(--muted);font-size:.95rem}
+
+  /* reader */
+  #reader{display:none}
+  .reader-bar{position:sticky;top:66px;z-index:20;background:rgba(251,248,241,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding:10px 0}
+  .reader-bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+  .back{background:none;border:1px solid var(--line);border-radius:999px;padding:6px 16px;color:var(--green);font-weight:700}
+  .tools{display:flex;gap:8px;align-items:center}
+  .tool{background:var(--card);border:1px solid var(--line);border-radius:10px;width:40px;height:38px;color:var(--green);font-weight:700}
+  .tool:hover{border-color:var(--gold)}
+  .surah-head{text-align:center;margin:30px auto 10px;max-width:560px}
+  .frame{border:2px solid var(--gold);border-radius:14px;padding:14px;position:relative;background:var(--card)}
+  .frame::before,.frame::after{content:"۞";position:absolute;top:50%;transform:translateY(-50%);color:var(--gold);font-size:1.4rem}
+  .frame::before{right:14px}.frame::after{left:14px}
+  .frame h2{margin:0;font-family:"Amiri Quran",serif;font-size:2.1rem;color:var(--green);font-weight:400}
+  .meta{color:var(--muted);font-size:.9rem;margin-top:8px}
+  .basmala{font-family:"Amiri Quran",serif;text-align:center;font-size:calc(var(--qsize) * 1.05);color:var(--green);margin:26px 0 10px}
+  .mushaf{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px clamp(16px,4vw,44px);font-family:"Amiri Quran",serif;font-size:var(--qsize);line-height:2.35;text-align:justify;color:#14211b}
+  .ayah{transition:background .2s;border-radius:6px}
+  .ayah:hover{background:#f5efdf}
+  .end{display:inline-block;font-family:"Amiri Quran",serif;color:var(--gold);margin:0 4px;white-space:nowrap}
+  .status{text-align:center;padding:50px 20px;color:var(--muted)}
+  .retry{margin-top:12px;background:var(--green);color:#fff;border:0;border-radius:999px;padding:8px 22px}
+  .nav-surah{display:flex;justify-content:center;gap:12px;margin:26px 0 10px}
+
+  /* dhikr */
+  .dhikr-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  @media(max-width:640px){.dhikr-grid{grid-template-columns:1fr}}
+  .dhikr{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;display:flex;flex-direction:column;gap:14px}
+  .dhikr .txt{font-family:"Amiri",serif;font-size:1.45rem;color:var(--green);line-height:1.9;margin:0}
+  .dhikr .row{display:flex;align-items:center;justify-content:space-between;gap:10px}
+  .counter-btn{background:var(--green);color:#fff;border:0;border-radius:999px;padding:9px 24px;font-weight:700;min-width:110px;transition:transform .1s}
+  .counter-btn:active{transform:scale(.95)}
+  .counter-btn.done{background:var(--gold)}
+  .count{font-weight:700;color:var(--gold);font-size:1.1rem}
+  .reset{background:none;border:0;color:var(--muted);font-size:.9rem;text-decoration:underline}
+
+  .soon{background:var(--card);border:2px dashed var(--gold);border-radius:var(--radius);padding:36px;text-align:center}
+  .soon h3{font-family:"Amiri",serif;font-size:1.7rem;color:var(--green);margin:0 0 6px}
+  .soon p{margin:0;color:var(--muted)}
+
+  footer{background:var(--green);color:#cfe0d6;text-align:center;padding:30px 0;margin-top:40px;font-size:.92rem}
+  footer .src{opacity:.8;font-size:.82rem;margin-top:6px}
+
+  /* ===== Ghibli-inspired theme ===== */
+  :root{ --green:#2f6b45; --green-2:#3d8152; --gold:#c9963e; --gold-soft:#fff3d6;
+    --paper:#fbf6ea; --card:#fffaf0; --ink:#2d3a2f; --muted:#6d7a6a; --line:#eadfc6; }
+  body{background:linear-gradient(#fbf6ea,#f4ecd8)}
+  header{background:rgba(255,250,240,.82);color:var(--green);backdrop-filter:blur(10px);box-shadow:0 2px 18px rgba(80,60,20,.08)}
+  .brand{color:var(--green);font-family:"Aref Ruqaa",serif;font-size:1.55rem}
+  .nav nav a{color:#4a5d47}
+  .nav nav a:hover,.nav nav a.on{background:#e9f1df;color:var(--green)}
+  .hero{background:none;padding:0;color:#fff;height:min(78vh,620px);min-height:420px;display:flex;align-items:flex-start;justify-content:center}
+  .hero::after{display:none}
+  .scene{position:absolute;inset:0;width:100%;height:100%}
+  .hero-text{position:relative;z-index:2;text-align:center;padding-top:clamp(40px,9vh,90px)}
+  .hero h1{font-family:"Aref Ruqaa",serif;font-weight:700;font-size:clamp(2.4rem,7vw,4.4rem);color:#fffdf5;text-shadow:0 3px 18px rgba(40,70,100,.45);margin:0}
+  .hero p{color:#fffdf5;text-shadow:0 2px 10px rgba(40,70,100,.5);font-weight:500;max-width:600px}
+  .hero .verse{color:#fff6d6;text-shadow:0 2px 12px rgba(40,70,100,.5)}
+  .cloud{animation:drift 60s linear infinite alternate}
+  .c2{animation-duration:80s}.c3{animation-duration:70s}
+  @keyframes drift{from{transform:translateX(-30px)}to{transform:translateX(40px)}}
+  .smoke circle{animation:smoke 5s ease-in-out infinite}
+  .smoke circle:nth-child(2){animation-delay:1.2s}.smoke circle:nth-child(3){animation-delay:2.4s}
+  @keyframes smoke{0%,100%{transform:translate(0,0)}50%{transform:translate(6px,-6px)}}
+  .motes circle{animation:twinkle 3.5s ease-in-out infinite}
+  .motes circle:nth-child(2){animation-delay:.8s}.motes circle:nth-child(3){animation-delay:1.6s}.motes circle:nth-child(4){animation-delay:2.2s}
+  @keyframes twinkle{0%,100%{opacity:.2}50%{opacity:1}}
+  .win-glow{animation:glow 4s ease-in-out infinite}
+  @keyframes glow{0%,100%{opacity:.6}50%{opacity:1}}
+  @media (prefers-reduced-motion:reduce){.cloud,.smoke circle,.motes circle,.win-glow{animation:none}}
+  .sec-title h2{font-family:"Aref Ruqaa",serif;color:var(--green)}
+  .sec-title .line{background:linear-gradient(to left,#9cc59a,transparent);height:2px;border-radius:2px}
+  .scard,.dhikr,.mushaf,.soon,.frame{box-shadow:0 6px 24px rgba(110,90,40,.08)}
+  .scard{border-radius:24px;background:var(--card)}
+  .scard:hover{border-color:#9cc59a}
+  .scard h3{font-family:"Aref Ruqaa",serif;color:var(--green)}
+  .counter-btn{background:var(--green-2);border-radius:14px;box-shadow:0 3px 0 #2a5e3c}
+  .counter-btn:active{transform:translateY(2px);box-shadow:0 1px 0 #2a5e3c}
+  .counter-btn.done{background:var(--gold);box-shadow:0 3px 0 #9c7128}
+  .soon{border-color:#9cc59a}
+  .banner{position:relative;height:230px;overflow:hidden}
+  .banner .hero-text{padding-top:44px}
+  .banner h2{font-family:"Aref Ruqaa",serif;font-size:2.4rem;color:#fffdf5;text-shadow:0 3px 14px rgba(40,70,100,.5);margin:0}
+  .reader-bar{top:66px;background:rgba(251,246,234,.92)}
+  .mushaf{background:#fffbf2;border-radius:24px}
+  .ayah:hover{background:#f1f6e6}
+  footer{background:#2f6b45;color:#e3efd9;position:relative;padding-top:60px}
+  footer::before{content:"";position:absolute;top:-1px;left:0;right:0;height:40px;background:radial-gradient(circle at 20px -6px,transparent 26px,#2f6b45 27px) 0 0/40px 40px repeat-x;transform:scaleY(-1)}
+
+  /* ===== cozy & sweet ===== */
+  :root{ --green:#4f8a5b; --green-2:#6aa877; --gold:#e6a157; --pink:#f6b8c4; --peach:#ffe3cc;
+    --paper:#fff8ef; --card:#fffdf8; --ink:#4a3f38; --muted:#8f8079; --line:#f1e2d2; }
+  body{background:#fff8ef;background-image:radial-gradient(#f6e3d3 1px,transparent 1px);background-size:22px 22px;font-family:"Baloo Bhaijaan 2","Tajawal",sans-serif}
+  .brand{font-family:"Baloo Bhaijaan 2",sans-serif;font-weight:700;font-size:1.35rem;color:#5b4636}
+  .nav nav a{color:#7a6658;font-weight:600}
+  .nav nav a:hover,.nav nav a.on{background:#ffe8dc;color:#c76a5a}
+  .hero h1{font-family:"Baloo Bhaijaan 2",sans-serif;font-weight:700;color:#fffaf2;text-shadow:0 3px 0 rgba(199,106,90,.35),0 6px 20px rgba(120,80,60,.35)}
+  .hero .verse{color:#fff;text-shadow:0 2px 12px rgba(150,90,70,.55)}
+  .banner h2{font-family:"Baloo Bhaijaan 2",sans-serif;text-shadow:0 3px 0 rgba(199,106,90,.35),0 6px 18px rgba(120,80,60,.35)}
+  .sec-title h2{font-family:"Baloo Bhaijaan 2",sans-serif;font-weight:700;color:#c76a5a;font-size:1.8rem}
+  .sec-title h2::before{content:"🍃 ";font-size:1.2rem}
+  .sec-title .line{background:repeating-linear-gradient(to left,#f3c9b5 0 8px,transparent 8px 14px);height:3px}
+  .scard,.dhikr,.mushaf,.soon{border:2px solid #f6e1d1;border-radius:28px;box-shadow:0 8px 0 #f6e1d1,0 14px 30px rgba(200,140,110,.12)}
+  .scard:hover{transform:translateY(-4px) rotate(-.4deg);border-color:#f6b8c4}
+  .scard h3{font-family:"Baloo Bhaijaan 2",sans-serif;font-weight:700;color:#5b8a62;font-size:1.5rem}
+  .num{color:#c76a5a}
+  .num svg path{stroke:#f6b8c4;fill:#fff1ea}
+  .dhikr .txt{color:#5b8a62}
+  .counter-btn{background:#7cb78a;border-radius:999px;box-shadow:0 4px 0 #5b9468;font-family:inherit}
+  .counter-btn:active{box-shadow:0 1px 0 #5b9468}
+  .counter-btn.done{background:#f2a65a;box-shadow:0 4px 0 #d08638}
+  .count{color:#e08a6e}
+  .soon{border:2px dashed #f6b8c4;background:#fff4f0}
+  .soon h3{font-family:"Baloo Bhaijaan 2",sans-serif;color:#c76a5a}
+  .back,.tool{border-radius:999px;border:2px solid #f6e1d1;color:#c76a5a;background:#fffdf8}
+  .frame{border:2px dashed #f6b8c4;border-radius:22px;background:#fff7f2}
+  .frame::before,.frame::after{content:"🌸";font-size:1.1rem}
+  .end{color:#e08a6e}
+  .ayah:hover{background:#fff0e8}
+  footer{background:#7cb78a;color:#fffaf2}
+  footer::before{background:radial-gradient(circle at 20px -6px,transparent 26px,#7cb78a 27px) 0 0/40px 40px repeat-x}
+  .bulbs circle{animation:twinkle 2.4s ease-in-out infinite}
+  .bulbs circle:nth-child(odd){animation-delay:1.1s}
+  .zzz{animation:twinkle 3s ease-in-out infinite}
+  @media (prefers-reduced-motion:reduce){.bulbs circle,.zzz{animation:none}}
+
+  /* ===== adhkar ===== */
+  :root{--asize:22px}
+  .adh-actions{text-align:center;margin:10px 0 24px}
+  .adh{background:#fffdf8;border:2px solid #f6e1d1;border-radius:24px;box-shadow:0 6px 0 #f6e1d1;padding:22px clamp(16px,4vw,30px);margin-bottom:22px;transition:opacity .3s}
+  .adh.done{opacity:.6;border-color:#cfe6c9;box-shadow:0 6px 0 #cfe6c9}
+  .adh .num-badge{display:inline-block;background:#ffe8dc;color:#c76a5a;border-radius:999px;padding:0 12px;font-weight:700;font-size:.85rem;margin-bottom:8px}
+  .adh .txt{font-family:"Amiri",serif;font-size:var(--asize);line-height:2.1;color:#3f4f42;margin:0}
+  .adh .qtxt{font-family:"Amiri Quran",serif;font-size:calc(var(--asize) * 1.12);line-height:2.3;color:#2f5d3e;margin:0}
+  .adh .qname{font-size:.85rem;color:#8f8079;margin-top:6px}
+  .adh .bsm{font-family:"Amiri Quran",serif;text-align:center;color:#5b8a62;font-size:calc(var(--asize) * 1.05);margin:0 0 4px}
+  .adh .note{background:#fff4f0;border-radius:12px;padding:6px 12px;color:#b0705f;font-size:.9rem;margin-top:12px;display:inline-block}
+  .adh .row{display:flex;align-items:center;gap:12px;margin-top:14px;flex-wrap:wrap}
+  .adh .times{color:#8f8079;font-size:.9rem}
+
+  /* ===== German page ===== */
+  body{font-family:"Nunito","Baloo Bhaijaan 2",sans-serif}
+  .de-txt{font-size:var(--asize);line-height:1.7;color:#4a3f38;margin:0 0 10px}
+  .ar-small{direction:rtl;text-align:right;font-family:"Amiri",serif;font-size:calc(var(--asize) * .78);line-height:1.9;color:#8f8079;margin:0;border-top:1px dashed #f1e2d2;padding-top:8px}
+  .ar-small.q{font-family:"Amiri Quran",serif}
+  .translit{color:#c76a5a;font-size:calc(var(--asize) * 1.3);font-weight:800;line-height:1.4;margin:0 0 6px}
+  .vn{color:#e08a6e;font-size:.8em;font-weight:700;margin:0 3px}
+  .note-de{background:#fff4f0;border-radius:12px;padding:6px 12px;color:#b0705f;font-size:.9rem;margin-top:12px;display:inline-block}
+  .intro{background:#fffdf8;border:2px dashed #f6b8c4;border-radius:20px;padding:14px 18px;color:#8f8079;font-size:.92rem;margin:0 0 26px}
+  .tabs-de{display:flex;gap:10px;justify-content:center;margin:0 0 24px;flex-wrap:wrap}
+  .de-small{font-size:calc(var(--asize) * .8);color:#8f8079}
+  .tab-de{border:2px solid #f6e1d1;background:#fffdf8;color:#c76a5a;border-radius:999px;padding:8px 20px;font-weight:700;cursor:pointer;font-family:inherit;text-decoration:none}
+  .tab-de.on{background:#7cb78a;border-color:#7cb78a;color:#fff}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <svg width="36" height="36" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#e9f1df"/><path d="M8 22 L20 11 L32 22Z" fill="#c8553d"/><rect x="11" y="21" width="18" height="11" fill="#f0dfbf" stroke="#8b5a3c" stroke-width="1.5"/><rect x="18" y="25" width="4" height="7" fill="#8b5a3c"/><rect x="13" y="24" width="4" height="4" fill="#ffd77a"/><circle cx="31" cy="27" r="5" fill="#3d8152"/><circle cx="9" cy="28" r="4" fill="#3d8152"/></svg>
+      <span>في كوخ على طرف غابة</span></a>
+    <nav>
+      <a href="index.html" lang="ar">العربية</a>
+      <a href="de.html" class="on">Deutsch</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="banner"><svg class="scene" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMax slice" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9ec8ea"/><stop offset=".45" stop-color="#f6cfc4"/><stop offset=".8" stop-color="#ffe0b8"/><stop offset="1" stop-color="#fff1d6"/>
+    </linearGradient>
+    <radialGradient id="sun" cx=".8" cy=".25" r=".35">
+      <stop offset="0" stop-color="#fff2c4" stop-opacity="1"/><stop offset="1" stop-color="#fff6d8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hillFar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9cc59a"/><stop offset="1" stop-color="#7fae7f"/></linearGradient>
+    <linearGradient id="hillNear" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#86bb5c"/><stop offset="1" stop-color="#5e9443"/></linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffd27a"/><stop offset="1" stop-color="#ffd27a" stop-opacity="0"/></radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="1.2"/></filter>
+  </defs>
+  <rect width="1200" height="520" fill="url(#sky)"/>
+  <rect width="1200" height="520" fill="url(#sun)"/>
+  <!-- clouds -->
+  <g class="cloud c1" fill="#fff" opacity=".95">
+    <circle cx="200" cy="120" r="38"/><circle cx="245" cy="100" r="50"/><circle cx="300" cy="118" r="40"/><circle cx="160" cy="138" r="26"/><rect x="160" y="120" width="170" height="40" rx="20"/>
+    <ellipse cx="245" cy="160" rx="95" ry="8" fill="#f9d6d6"/>
+  </g>
+  <g class="cloud c2" fill="#fff" opacity=".9">
+    <circle cx="760" cy="80" r="28"/><circle cx="795" cy="64" r="38"/><circle cx="838" cy="80" r="30"/><rect x="735" y="78" width="130" height="30" rx="15"/>
+  </g>
+  <g class="cloud c3" fill="#fff" opacity=".85">
+    <circle cx="1020" cy="170" r="22"/><circle cx="1050" cy="156" r="30"/><circle cx="1084" cy="170" r="24"/><rect x="1000" y="168" width="104" height="24" rx="12"/>
+  </g>
+  <!-- far hills -->
+  <path d="M0 340 C150 290 300 300 430 320 C560 340 650 280 800 285 C950 290 1080 320 1200 300 L1200 520 L0 520Z" fill="url(#hillFar)"/>
+  <!-- far tree line -->
+  <g fill="#5f8f63">
+    <circle cx="40" cy="330" r="22"/><circle cx="75" cy="320" r="26"/><circle cx="110" cy="330" r="20"/><circle cx="1110" cy="305" r="20"/><circle cx="1145" cy="298" r="24"/><circle cx="1180" cy="306" r="20"/>
+  </g>
+  <!-- near hill -->
+  <path d="M0 420 C180 370 360 390 520 400 C700 410 820 350 1000 355 C1100 358 1160 370 1200 380 L1200 520 L0 520Z" fill="url(#hillNear)"/>
+  <!-- path -->
+  <path d="M640 520 C660 470 760 440 830 392" stroke="#e8d3a2" stroke-width="22" fill="none" stroke-linecap="round" opacity=".9"/>
+  <!-- forest edge (left) -->
+  <g>
+    <rect x="58" y="330" width="12" height="90" fill="#6b4a32"/><rect x="150" y="345" width="12" height="80" fill="#6b4a32"/><rect x="240" y="360" width="10" height="60" fill="#6b4a32"/>
+    <g fill="#2f6b45"><circle cx="64" cy="300" r="52"/><circle cx="30" cy="340" r="40"/><circle cx="105" cy="340" r="42"/></g>
+    <g fill="#3d8152"><circle cx="156" cy="318" r="46"/><circle cx="125" cy="355" r="34"/><circle cx="190" cy="352" r="36"/></g>
+    <g fill="#4f9660"><circle cx="245" cy="345" r="34"/><circle cx="222" cy="372" r="26"/><circle cx="270" cy="370" r="26"/></g>
+    <g fill="#ffffff" opacity=".12"><circle cx="50" cy="285" r="20"/><circle cx="145" cy="300" r="16"/><circle cx="238" cy="332" r="12"/></g>
+  </g>
+  <!-- forest edge (right, behind cottage) -->
+  <g>
+    <g fill="#336f48"><circle cx="1010" cy="300" r="48"/><circle cx="1070" cy="290" r="56"/><circle cx="1130" cy="310" r="50"/><circle cx="1185" cy="300" r="46"/></g>
+    <g fill="#407f53"><circle cx="960" cy="330" r="36"/><circle cx="1040" cy="340" r="40"/><circle cx="1110" cy="345" r="40"/><circle cx="1175" cy="340" r="36"/></g>
+  </g>
+  <!-- cottage -->
+  <g transform="translate(830 300)">
+    <ellipse cx="45" cy="98" rx="85" ry="10" fill="#4e7f3a" opacity=".5"/>
+    <rect x="-5" y="40" width="100" height="58" fill="#f0dfbf"/>
+    <rect x="-5" y="40" width="100" height="58" fill="none" stroke="#8b5a3c" stroke-width="3"/>
+    <path d="M-20 44 L45 -6 L110 44Z" fill="#c8553d"/>
+    <path d="M-20 44 L45 -6 L110 44" fill="none" stroke="#8e3a2a" stroke-width="3" stroke-linejoin="round"/>
+    <rect x="70" y="-2" width="14" height="30" fill="#8b5a3c"/>
+    <rect x="34" y="62" width="22" height="36" rx="3" fill="#8b5a3c"/>
+    <circle cx="51" cy="81" r="2" fill="#f3c766"/>
+    <circle cx="16" cy="62" r="22" fill="url(#glow)" class="win-glow"/>
+    <rect x="6" y="54" width="20" height="18" rx="2" fill="#ffd77a" stroke="#8b5a3c" stroke-width="2.5"/>
+    <path d="M16 54v18M6 63h20" stroke="#8b5a3c" stroke-width="2"/>
+    <rect x="66" y="54" width="18" height="16" rx="2" fill="#ffd77a" stroke="#8b5a3c" stroke-width="2.5"/>
+    <!-- smoke -->
+    <g fill="#ffffff" class="smoke"><circle cx="77" cy="-12" r="7" opacity=".8"/><circle cx="84" cy="-28" r="9" opacity=".6"/><circle cx="93" cy="-48" r="11" opacity=".4"/></g>
+    <!-- string lights -->
+    <path d="M-20 44 Q15 58 45 46 Q75 58 110 44" fill="none" stroke="#6b4a32" stroke-width="1.2"/>
+    <g class="bulbs"><circle cx="-8" cy="50" r="3.2" fill="#ffd56b"/><circle cx="8" cy="54" r="3.2" fill="#ff9fb2"/><circle cx="26" cy="53" r="3.2" fill="#a8e0ff"/><circle cx="45" cy="47" r="3.2" fill="#ffd56b"/><circle cx="64" cy="53" r="3.2" fill="#ff9fb2"/><circle cx="82" cy="54" r="3.2" fill="#a8e0ff"/><circle cx="98" cy="50" r="3.2" fill="#ffd56b"/></g>
+    <!-- sleeping cat -->
+    <g transform="translate(66 86)">
+      <ellipse cx="10" cy="8" rx="13" ry="7" fill="#f2a65a"/>
+      <circle cx="-1" cy="4" r="6.5" fill="#f2a65a"/>
+      <path d="M-6 0 L-5 -6 L-1 -1Z M1 -1 L4 -6 L5 0Z" fill="#f2a65a"/>
+      <path d="M-4 4 q1.5 1.5 3 0 M0.5 4 q1.5 1.5 3 0" stroke="#6b3e1e" stroke-width="1" fill="none"/>
+      <path d="M22 9 q8 -2 4 -9" stroke="#f2a65a" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M6 4 l3 3 M12 3 l2 4" stroke="#d98840" stroke-width="1.2"/>
+      <text x="12" y="-8" font-size="9" fill="#6d7a9a" font-family="sans-serif" class="zzz">z z</text>
+    </g>
+    <!-- fence -->
+    <g fill="#fff4e0" stroke="#c9a77a" stroke-width="1.5"><rect x="-58" y="78" width="7" height="22" rx="3"/><rect x="-44" y="78" width="7" height="22" rx="3"/><rect x="-30" y="78" width="7" height="22" rx="3"/><rect x="-62" y="85" width="44" height="4" rx="2"/></g>
+    <!-- mushrooms -->
+    <g transform="translate(125 88)"><rect x="-2" y="0" width="4" height="9" rx="2" fill="#fff4e0"/><path d="M-8 1 a8 7 0 0 1 16 0z" fill="#e8584b"/><circle cx="-3" cy="-2" r="1.3" fill="#fff"/><circle cx="3" cy="-3" r="1.1" fill="#fff"/></g>
+    <g transform="translate(138 92) scale(.7)"><rect x="-2" y="0" width="4" height="9" rx="2" fill="#fff4e0"/><path d="M-8 1 a8 7 0 0 1 16 0z" fill="#e8584b"/><circle cx="0" cy="-3" r="1.3" fill="#fff"/></g>
+    <!-- flowers -->
+    <g><circle cx="-12" cy="96" r="4" fill="#f4a7b9"/><circle cx="2" cy="99" r="3.5" fill="#fff3a6"/><circle cx="100" cy="97" r="4" fill="#f4a7b9"/><circle cx="112" cy="99" r="3" fill="#fff"/></g>
+  </g>
+  <!-- grass sparkles & flowers -->
+  <g fill="#fff" opacity=".85"><circle cx="380" cy="455" r="3"/><circle cx="420" cy="470" r="2.5"/><circle cx="560" cy="440" r="3"/><circle cx="930" cy="455" r="3"/><circle cx="1060" cy="470" r="2.5"/></g>
+  <g fill="#f4a7b9"><circle cx="395" cy="462" r="3"/><circle cx="545" cy="452" r="3"/><circle cx="1000" cy="462" r="3"/></g>
+  <!-- fireflies / light motes -->
+  <g fill="#fff5c2" class="motes"><circle cx="330" cy="330" r="3"/><circle cx="700" cy="360" r="2.5"/><circle cx="960" cy="250" r="2.5"/><circle cx="480" cy="300" r="2"/></g>
+</svg>
+<div class="hero-text"><h2 style="font-family:Nunito,sans-serif">Dhikr &amp; Adhkar</h2></div></div>
+  <div class="reader-bar"><div class="wrap">
+    <a class="back" href="index.html" style="text-decoration:none">← العربية</a>
+    <div class="tools"><button class="tool" id="smaller" aria-label="Schrift kleiner">A-</button><button class="tool" id="bigger" aria-label="Schrift größer">A+</button></div>
+  </div></div>
+  <div class="wrap">
+    <div class="surah-head"><div class="frame"><h1 style="margin:0;font-family:Nunito,sans-serif;font-size:1.9rem;color:#c76a5a">Dhikr &amp; Adhkar auf Deutsch</h1></div></div>
+    <p class="intro">Die deutschen Texte sind sinngemäße Übersetzungen; darunter steht jeweils der arabische Originaltext. Die Quranverse folgen der Übersetzung von A. S. F. Bubenheim &amp; N. Elyas. Die Adhkar für Morgen und Abend stammen aus dem Buch „al-Awrād al-Muḫtāra“ von Šaiḫ ʿAbd al-Karīm ar-Rifāʿī.</p>
+    <div class="tabs-de"><a class="tab-de" href="#dhikr">Dhikr</a><a class="tab-de" href="#adhkar">Morgen- &amp; Abend-Adhkar</a></div>
+
+    <section id="dhikr" style="padding:10px 0 30px">
+      <div class="sec-title"><h2 style="font-family:Nunito,sans-serif">Dhikr</h2><div class="line"></div></div>
+      <div id="dhikr-list"></div>
+    </section>
+
+    <section id="adhkar" style="padding:10px 0 30px">
+      <div class="sec-title"><h2 style="font-family:Nunito,sans-serif">Adhkar für Morgen und Abend</h2><div class="line"></div></div>
+      <div class="adh-actions"><button class="back" id="reset-all" type="button">↺ Alle Zähler zurücksetzen</button></div>
+      <div id="adhkar-list"></div>
+    </section>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    في كوخ على طرف غابة
+    <div class="src">Arabischer Qurantext (Uthmani) und deutsche Übersetzung (Bubenheim &amp; Elyas) von alquran.cloud</div>
+  </div>
+</footer>
+<script>
+(function(){
+  const DHIKR = [{"ar": "سُبْحَانَ اللَّهِ", "tr": "Subḥāna llāh", "de": "Gepriesen sei Allah.", "c": 33}, {"ar": "الْحَمْدُ لِلَّهِ", "tr": "Al-ḥamdu lillāh", "de": "Alles Lob gebührt Allah.", "c": 33}, {"ar": "اللَّهُ أَكْبَرُ", "tr": "Allāhu akbar", "de": "Allah ist größer (als alles).", "c": 34}, {"ar": "لَا إِلَٰهَ إِلَّا اللَّهُ", "tr": "Lā ilāha illa llāh", "de": "Es gibt keinen Gott außer Allah.", "c": 100}, {"ar": "أَسْتَغْفِرُ اللَّهَ", "tr": "Astaghfiru llāh", "de": "Ich bitte Allah um Vergebung.", "c": 100}, {"ar": "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ", "tr": "Lā ḥawla wa lā quwwata illā billāh", "de": "Es gibt keine Macht und keine Kraft außer bei Allah.", "c": 100}, {"ar": "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ، سُبْحَانَ اللَّهِ الْعَظِيمِ", "tr": "Subḥāna llāhi wa bi-ḥamdihi, subḥāna llāhi l-ʿaẓīm", "de": "Gepriesen sei Allah, und Ihm gebührt das Lob; gepriesen sei Allah, der Gewaltige.", "c": 100}, {"ar": "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَىٰ نَبِيِّنَا مُحَمَّدٍ", "tr": "Allāhumma ṣalli wa sallim ʿalā nabiyyinā Muḥammad", "de": "O Allah, segne unseren Propheten Muhammad und schenke ihm Frieden.", "c": 10}];
+  const ITEMS = [{"type": "t", "c": 3, "note": "", "text": "اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَٰهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَىٰ عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي، فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ.", "de": "O Allah, Du bist mein Herr, es gibt keinen Gott außer Dir. Du hast mich erschaffen, und ich bin Dein Diener. Ich halte an Deinem Bund und Deinem Versprechen fest, so gut ich kann. Ich nehme Zuflucht bei Dir vor dem Übel dessen, was ich getan habe. Ich bekenne Dir Deine Gnade, die Du mir erwiesen hast, und ich bekenne meine Sünde. So vergib mir, denn niemand vergibt die Sünden außer Dir."}, {"type": "q", "c": 3, "note": "", "s": 112, "a": [1, 4], "b": 1, "name": "سورة الإخلاص", "name_de": "Sure al-Iḫlāṣ (112)"}, {"type": "q", "c": 3, "note": "", "s": 113, "a": [1, 5], "b": 1, "name": "سورة الفلق", "name_de": "Sure al-Falaq (113)"}, {"type": "q", "c": 3, "note": "", "s": 114, "a": [1, 6], "b": 1, "name": "سورة الناس", "name_de": "Sure an-Nās (114)"}, {"type": "t", "c": 1, "note": "وفي المساء يقول: أمسينا وأمسى الملك لله", "text": "أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ، رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَٰذَا الْيَوْمِ وَخَيْرَ مَا بَعْدَهُ، وَأَعُوذُ بِكَ مِنْ شَرِّ هَٰذَا الْيَوْمِ وَشَرِّ مَا بَعْدَهُ، رَبِّ أَعُوذُ بِكَ مِنَ الْكَسَلِ وَالْهَرَمِ وَسُوءِ الْكِبَرِ، وَأَعُوذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ.", "de": "Wir sind in den Morgen eingetreten, und am Morgen gehört die Herrschaft Allah. Alles Lob gebührt Allah. Es gibt keinen Gott außer Allah allein, Er hat keinen Teilhaber. Ihm gehört die Herrschaft und Ihm gebührt das Lob, und Er hat Macht über alle Dinge. Mein Herr, ich bitte Dich um das Gute dieses Tages und das Gute dessen, was nach ihm kommt, und ich nehme Zuflucht bei Dir vor dem Übel dieses Tages und dem Übel dessen, was nach ihm kommt. Mein Herr, ich nehme Zuflucht bei Dir vor Trägheit, Altersschwäche und den Übeln des hohen Alters, und ich nehme Zuflucht bei Dir vor einer Strafe im Feuer und einer Strafe im Grab.", "note_de": "Am Abend sagt man: „Amsaynā wa amsā l-mulku lillāh“ – Wir sind in den Abend eingetreten, und am Abend gehört die Herrschaft Allah …"}, {"type": "t", "c": 3, "note": "", "text": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ.", "de": "Ich nehme Zuflucht bei den vollkommenen Worten Allahs vor dem Übel dessen, was Er erschaffen hat."}, {"type": "t", "c": 1, "note": "", "text": "اللَّهُمَّ فَاطِرَ السَّمَاوَاتِ وَالْأَرْضِ، عَالِمَ الْغَيْبِ وَالشَّهَادَةِ، رَبَّ كُلِّ شَيْءٍ وَمَلِيكَهُ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا أَنْتَ، أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي، وَشَرِّ الشَّيْطَانِ وَشِرْكِهِ، وَأَنْ أَقْتَرِفَ عَلَىٰ نَفْسِي سُوءًا أَوْ أَجُرَّهُ إِلَىٰ مُسْلِمٍ.", "de": "O Allah, Schöpfer der Himmel und der Erde, Kenner des Verborgenen und des Offenbaren, Herr und Besitzer aller Dinge: Ich bezeuge, dass es keinen Gott außer Dir gibt. Ich nehme Zuflucht bei Dir vor dem Übel meiner eigenen Seele, vor dem Übel des Satans und seiner Verführung zur Beigesellung, und davor, mir selbst etwas Schlechtes zuzufügen oder es einem Muslim zuzufügen."}, {"type": "t", "c": 3, "note": "", "text": "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ.", "de": "Im Namen Allahs, mit Dessen Namen nichts auf der Erde und nichts im Himmel Schaden zufügen kann. Er ist der Allhörende, der Allwissende."}, {"type": "t", "c": 3, "note": "", "text": "رَضِينَا بِاللَّهِ رَبًّا، وَبِالْإِسْلَامِ دِينًا، وَبِسَيِّدِنَا مُحَمَّدٍ ﷺ نَبِيًّا وَرَسُولًا.", "de": "Wir sind zufrieden mit Allah als Herrn, mit dem Islam als Religion und mit unserem Herrn Muhammad ﷺ als Propheten und Gesandten."}, {"type": "t", "c": 4, "note": "وفي المساء يقول: اللهم إني أمسيت", "text": "اللَّهُمَّ إِنِّي أَصْبَحْتُ أُشْهِدُكَ، وَأُشْهِدُ حَمَلَةَ عَرْشِكَ، وَمَلَائِكَتَكَ وَجَمِيعَ خَلْقِكَ، أَنَّكَ أَنْتَ اللَّهُ لَا إِلَٰهَ إِلَّا أَنْتَ، وَأَنَّ مُحَمَّدًا عَبْدُكَ وَرَسُولُكَ.", "de": "O Allah, ich bin in den Morgen eingetreten und nehme Dich zum Zeugen, und ich nehme die Träger Deines Thrones, Deine Engel und Deine ganze Schöpfung zu Zeugen, dass Du Allah bist – es gibt keinen Gott außer Dir – und dass Muhammad Dein Diener und Dein Gesandter ist.", "note_de": "Am Abend sagt man: „Allāhumma innī amsaytu …“ – O Allah, ich bin in den Abend eingetreten …"}, {"type": "t", "c": 3, "note": "وفي المساء يقول: اللهم ما أمسى", "text": "اللَّهُمَّ مَا أَصْبَحَ بِي مِنْ نِعْمَةٍ أَوْ بِأَحَدٍ مِنْ خَلْقِكَ، فَمِنْكَ وَحْدَكَ لَا شَرِيكَ لَكَ، فَلَكَ الْحَمْدُ وَلَكَ الشُّكْرُ.", "de": "O Allah, jede Gnade, die mir oder einem Deiner Geschöpfe an diesem Morgen zuteilwird, kommt allein von Dir; Du hast keinen Teilhaber. Dir gebührt das Lob und Dir gebührt der Dank.", "note_de": "Am Abend sagt man: „Allāhumma mā amsā …“ – … an diesem Abend …"}, {"type": "t", "c": 1, "note": "", "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ، اللَّهُمَّ أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ، فِي دِينِي وَدُنْيَايَ وَأَهْلِي وَمَالِي.", "de": "O Allah, ich bitte Dich um Wohlergehen im Diesseits und im Jenseits. O Allah, ich bitte Dich um Verzeihung und Wohlergehen in meiner Religion und meinem weltlichen Leben, für meine Familie und meinen Besitz."}, {"type": "t", "c": 1, "note": "", "text": "اللَّهُمَّ اسْتُرْ عَوْرَاتِي وَآمِنْ رَوْعَاتِي، اللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ وَمِنْ خَلْفِي، وَعَنْ يَمِينِي وَعَنْ شِمَالِي وَمِنْ فَوْقِي، وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي.", "de": "O Allah, bedecke meine Blößen und gib mir Sicherheit in meinen Ängsten. O Allah, beschütze mich von vorn und von hinten, von rechts und von links und von oben, und ich nehme Zuflucht bei Deiner Größe davor, von unten her ins Verderben gerissen zu werden."}, {"type": "t", "c": 1, "note": "", "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِوَجْهِكَ الْكَرِيمِ وَبِكَلِمَاتِكَ التَّامَّةِ مِنْ شَرِّ مَا أَنْتَ آخِذٌ بِنَاصِيَتِهِ، اللَّهُمَّ أَنْتَ تَكْشِفُ الْمَغْرَمَ وَالْمَأْثَمَ، اللَّهُمَّ لَا يُهْزَمُ جُنْدُكَ وَلَا يُخْلَفُ وَعْدُكَ، وَلَا يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ، سُبْحَانَكَ وَبِحَمْدِكَ، لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ.", "de": "O Allah, ich nehme Zuflucht bei Deinem edlen Angesicht und bei Deinen vollkommenen Worten vor dem Übel all dessen, was Du an seinem Stirnschopf hältst. O Allah, Du nimmst Schulden und Sünde hinweg. O Allah, Dein Heer wird nicht besiegt und Dein Versprechen wird nicht gebrochen, und dem Vermögenden nützt sein Vermögen nichts vor Dir. Gepriesen seist Du, und Dir gebührt das Lob. Es gibt keinen Gott außer Allah allein, Er hat keinen Teilhaber. Ihm gehört die Herrschaft und Ihm gebührt das Lob, und Er hat Macht über alle Dinge."}, {"type": "t", "c": 1, "note": "", "text": "أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ رَبِّ الْعَالَمِينَ.", "de": "Wir sind in den Morgen eingetreten, und am Morgen gehört die Herrschaft Allah, dem Herrn der Welten."}, {"type": "t", "c": 1, "note": "", "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ هَٰذَا الْيَوْمِ، فَتْحَهُ وَنَصْرَهُ، وَنُورَهُ وَبَرَكَتَهُ وَهُدَاهُ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِيهِ وَشَرِّ مَا بَعْدَهُ.", "de": "O Allah, ich bitte Dich um das Gute dieses Tages – seinen Erfolg und seinen Sieg, sein Licht, seinen Segen und seine Rechtleitung – und ich nehme Zuflucht bei Dir vor dem Übel, das in ihm ist, und vor dem Übel dessen, was nach ihm kommt."}, {"type": "t", "c": 3, "note": "", "text": "اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ وَالْفَقْرِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، لَا إِلَٰهَ إِلَّا أَنْتَ.", "de": "O Allah, schenke meinem Körper Wohlergehen. O Allah, schenke meinem Gehör Wohlergehen. O Allah, schenke meinem Augenlicht Wohlergehen. O Allah, ich nehme Zuflucht bei Dir vor dem Unglauben und der Armut. O Allah, ich nehme Zuflucht bei Dir vor der Strafe des Grabes. Es gibt keinen Gott außer Dir."}, {"type": "q", "c": 1, "note": "", "s": 30, "a": [17, 19], "b": 0, "name": "سورة الروم: ١٧–١٩", "name_de": "Sure ar-Rūm 30:17–19"}, {"type": "t", "c": 1, "note": "", "text": "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ، لَا قُوَّةَ إِلَّا بِاللَّهِ، مَا شَاءَ اللَّهُ كَانَ وَمَا لَمْ يَشَأْ لَمْ يَكُنْ، أَعْلَمُ أَنَّ اللَّهَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ، وَأَنَّ اللَّهَ قَدْ أَحَاطَ بِكُلِّ شَيْءٍ عِلْمًا.", "de": "Gepriesen sei Allah, und Ihm gebührt das Lob. Es gibt keine Kraft außer bei Allah. Was Allah will, geschieht, und was Er nicht will, geschieht nicht. Ich weiß, dass Allah Macht über alle Dinge hat und dass Allah alles mit Seinem Wissen umfasst."}, {"type": "t", "c": 1, "note": "", "text": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَأَعُوذُ بِكَ مِنَ الْعَجْزِ وَالْكَسَلِ، وَأَعُوذُ بِكَ مِنَ الْجُبْنِ وَالْبُخْلِ، وَأَعُوذُ بِكَ مِنْ غَلَبَةِ الدَّيْنِ وَقَهْرِ الرِّجَالِ.", "de": "O Allah, ich nehme Zuflucht bei Dir vor Sorge und Kummer, ich nehme Zuflucht bei Dir vor Unfähigkeit und Trägheit, ich nehme Zuflucht bei Dir vor Feigheit und Geiz, und ich nehme Zuflucht bei Dir vor der Last der Schulden und der Unterdrückung durch Menschen."}, {"type": "t", "c": 1, "note": "وفي المساء يقول: أمسينا", "text": "أَصْبَحْنَا عَلَىٰ فِطْرَةِ الْإِسْلَامِ وَكَلِمَةِ الْإِخْلَاصِ، وَدِينِ نَبِيِّنَا مُحَمَّدٍ ﷺ وَمِلَّةِ إِبْرَاهِيمَ عَلَيْهِ السَّلَامُ حَنِيفًا مُسْلِمًا وَمَا أَنَا مِنَ الْمُشْرِكِينَ.", "de": "Wir sind in den Morgen eingetreten auf der natürlichen Veranlagung des Islam, auf dem Wort der Aufrichtigkeit, auf der Religion unseres Propheten Muhammad ﷺ und auf dem Glaubensweg Abrahams (Friede sei mit ihm), der aufrichtig ergeben und ein Muslim war und nicht zu den Götzendienern gehörte.", "note_de": "Am Abend sagt man: „Amsaynā …“ – Wir sind in den Abend eingetreten …"}, {"type": "t", "c": 1, "note": "وفي المساء يقول: أمسينا وأمسى الملك لله عز وجل", "text": "أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ عَزَّ وَجَلَّ، وَالْحَمْدُ لِلَّهِ، وَالْكِبْرِيَاءُ وَالْعَظَمَةُ لِلَّهِ، وَالْخَلْقُ وَالْأَمْرُ وَاللَّيْلُ وَالنَّهَارُ وَمَا سَكَنَ فِيهِمَا لِلَّهِ تَعَالَىٰ.", "de": "Wir sind in den Morgen eingetreten, und am Morgen gehört die Herrschaft Allah, dem Mächtigen und Erhabenen. Alles Lob gebührt Allah. Die Größe und die Erhabenheit gehören Allah, ebenso die Schöpfung und der Befehl, die Nacht und der Tag und alles, was in ihnen ruht – alles gehört Allah, dem Erhabenen.", "note_de": "Am Abend sagt man: „Amsaynā wa amsā l-mulku lillāhi ʿazza wa ǧall …“"}, {"type": "t", "c": 1, "note": "", "text": "اللَّهُمَّ اجْعَلْ أَوَّلَ هَٰذَا النَّهَارِ صَلَاحًا، وَأَوْسَطَهُ نَجَاحًا، وَآخِرَهُ فَلَاحًا يَا أَرْحَمَ الرَّاحِمِينَ.", "de": "O Allah, lass den Anfang dieses Tages Rechtschaffenheit sein, seine Mitte Gelingen und sein Ende Erfolg, o Barmherzigster der Barmherzigen."}, {"type": "t", "c": 3, "note": "", "text": "أَعُوذُ بِاللَّهِ السَّمِيعِ الْعَلِيمِ مِنَ الشَّيْطَانِ الرَّجِيمِ.", "de": "Ich nehme Zuflucht bei Allah, dem Allhörenden, dem Allwissenden, vor dem verfluchten Satan."}, {"type": "q", "c": 1, "note": "", "s": 59, "a": [22, 24], "b": 0, "name": "سورة الحشر: ٢٢–٢٤", "name_de": "Sure al-Ḥašr 59:22–24"}, {"type": "q", "c": 1, "note": "", "s": 23, "a": [115, 118], "b": 0, "name": "سورة المؤمنون: ١١٥–١١٨", "name_de": "Sure al-Muʾminūn 23:115–118"}, {"type": "t", "c": 1, "note": "", "text": "اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فُجَاءَةِ الْخَيْرِ، وَأَعُوذُ بِكَ مِنْ فُجَاءَةِ الشَّرِّ، يَا حَيُّ يَا قَيُّومُ، بِكَ أَسْتَغِيثُ فَأَصْلِحْ لِي شَأْنِي كُلَّهُ، وَلَا تَكِلْنِي إِلَىٰ نَفْسِي طَرْفَةَ عَيْنٍ.", "de": "O Allah, ich bitte Dich um das Gute, das plötzlich kommt, und ich nehme Zuflucht bei Dir vor dem Übel, das plötzlich kommt. O Lebendiger, o Beständiger, bei Dir suche ich Hilfe: Bringe alle meine Angelegenheiten in Ordnung und überlasse mich nicht einen Augenblick lang mir selbst."}, {"type": "t", "c": 1, "note": "", "text": "بِسْمِ اللَّهِ عَلَىٰ نَفْسِي وَأَهْلِي وَمَالِي، اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلًا مُتَقَبَّلًا.", "de": "Im Namen Allahs über mich selbst, meine Familie und meinen Besitz. O Allah, ich bitte Dich um nützliches Wissen, gute Versorgung und Taten, die angenommen werden."}, {"type": "t", "c": 3, "note": "وفي المساء يقول: اللهم إني أمسيت", "text": "اللَّهُمَّ إِنِّي أَصْبَحْتُ مِنْكَ فِي نِعْمَةٍ وَعَافِيَةٍ وَسِتْرٍ، فَأَتِمَّ نِعْمَتَكَ عَلَيَّ وَعَافِيَتَكَ وَسِتْرَكَ فِي الدُّنْيَا وَالْآخِرَةِ.", "de": "O Allah, ich bin an diesem Morgen in Deiner Gnade, Deinem Wohlergehen und Deinem Schutz. So vollende Deine Gnade, Dein Wohlergehen und Deinen Schutz an mir im Diesseits und im Jenseits.", "note_de": "Am Abend sagt man: „Allāhumma innī amsaytu …“ – O Allah, ich bin in den Abend eingetreten …"}, {"type": "q", "c": 7, "note": "", "s": 9, "a": [129, 129], "b": 0, "from": "حَسْبِ", "name": "سورة التوبة: ١٢٩", "name_de": "Sure at-Tauba 9:129"}, {"type": "q", "c": 1, "note": "", "s": 40, "a": [1, 3], "b": 1, "name": "سورة غافر: ١–٣", "name_de": "Sure Ġāfir 40:1–3"}, {"type": "q", "c": 1, "note": "", "s": 2, "a": [255, 255], "b": 0, "name": "آية الكرسي — سورة البقرة: ٢٥٥", "name_de": "Āyat al-Kursī – Sure al-Baqara 2:255"}, {"type": "t", "c": 1, "note": "", "text": "وَصَلَّى اللَّهُ عَلَىٰ سَيِّدِنَا مُحَمَّدٍ وَعَلَىٰ آلِهِ وَصَحْبِهِ وَسَلَّمَ.", "de": "Und Allah segne unseren Herrn Muhammad, seine Familie und seine Gefährten und schenke ihnen Frieden."}];
+  const $ = s => document.querySelector(s);
+  const store = { get(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }, set(k,v){ try{ localStorage.setItem(k,v); }catch(e){} } };
+  const times = n => n===1 ? "1-mal" : n+"-mal";
+  const BSM = "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ";
+  let size = parseInt(store.get("de-size")||"20",10);
+  const apply = ()=>document.documentElement.style.setProperty("--asize", size+"px"); apply();
+  $("#bigger").onclick=()=>{ size=Math.min(32,size+2); apply(); store.set("de-size",size); };
+  $("#smaller").onclick=()=>{ size=Math.max(15,size-2); apply(); store.set("de-size",size); };
+
+  function counterRow(key,i,c,v){
+    const done=v>=c;
+    return `<div class="row"><button class="counter-btn ${done?"done":""}" data-k="${key}" data-i="${i}" type="button">${done?"Fertig ✓":"Zählen"}</button>
+      <span class="count">${v} / ${c}</span><span class="times">(${times(c)})</span></div>`;
+  }
+  const counts = { d: JSON.parse(store.get("de-dhikr")||"{}"), a: JSON.parse(store.get("de-adhkar")||"{}") };
+  function renderDhikr(){
+    $("#dhikr-list").innerHTML = DHIKR.map((d,i)=>{
+      const v=counts.d[i]||0;
+      return `<article class="adh ${v>=d.c?"done":""}" id="dd${i}"><p class="translit">${d.tr}</p><p class="de-txt de-small">${d.de}</p><p class="ar-small">${d.ar}</p>${counterRow("d",i,d.c,v)}</article>`;
+    }).join("");
+  }
+  function renderAdhkar(){
+    $("#adhkar-list").innerHTML = ITEMS.map((it,i)=>{
+      const v=counts.a[i]||0;
+      const body = it.type==="t"
+        ? `<p class="de-txt">${it.de}</p><p class="ar-small">${it.text}</p>`
+        : `<p class="de-txt" id="qd${i}">Verse werden geladen …</p>${it.b?`<p class="ar-small q" style="text-align:center;border:0">${BSM}</p>`:""}<p class="ar-small q" id="qa${i}"></p><div class="qname">${it.name_de}</div>`;
+      return `<article class="adh ${v>=it.c?"done":""}" id="da${i}"><span class="num-badge">${i+1}</span>${body}${it.note_de?`<div class="note-de">🌙 ${it.note_de}</div>`:""}${counterRow("a",i,it.c,v)}</article>`;
+    }).join("");
+    fillQuran();
+  }
+  document.addEventListener("click",e=>{
+    const b=e.target.closest("[data-k]"); if(!b) return;
+    const k=b.dataset.k, i=+b.dataset.i, c=(k==="d"?DHIKR:ITEMS)[i].c;
+    if((counts[k][i]||0)>=c) return;
+    counts[k][i]=(counts[k][i]||0)+1; store.set(k==="d"?"de-dhikr":"de-adhkar",JSON.stringify(counts[k]));
+    const card=$("#"+(k==="d"?"dd":"da")+i), v=counts[k][i];
+    card.querySelector(".count").textContent=v+" / "+c;
+    if(v>=c){ card.classList.add("done"); b.classList.add("done"); b.textContent="Fertig ✓"; if(navigator.vibrate) try{navigator.vibrate(60)}catch(_){} }
+  });
+  $("#reset-all").onclick=()=>{ counts.a={}; counts.d={}; store.set("de-adhkar","{}"); store.set("de-dhikr","{}"); renderDhikr(); renderAdhkar(); };
+
+  const qcache = JSON.parse(store.get("de-quran")||"{}");
+  const sleep = ms => new Promise(r=>setTimeout(r,ms));
+  async function getRange(s,from,to,ed){
+    const key=ed+"|"+s+":"+from+"-"+to; if(qcache[key]) return qcache[key];
+    let last;
+    for(let attempt=0; attempt<5; attempt++){
+      try{
+        const r=await fetch(`https://api.alquran.cloud/v1/surah/${s}/${ed}?offset=${from-1}&limit=${to-from+1}`);
+        const j=await r.json(); if(j.status!=="OK") throw new Error("bad");
+        const list=j.data.ayahs.map(x=>({n:x.numberInSurah,t:x.text}));
+        qcache[key]=list; store.set("de-quran",JSON.stringify(qcache)); return list;
+      }catch(e){ last=e; await sleep(1500*(attempt+1)); }
+    }
+    throw last;
+  }
+  function stripB(t){ const w=t.split(" "); return (w[0]&&w[0].startsWith("بِسْمِ")&&w.length>4)? w.slice(4).join(" ") : t; }
+  async function fillQuran(){
+    for(let i=0;i<ITEMS.length;i++){
+      const it=ITEMS[i]; if(it.type!=="q") continue;
+      try{
+        const ar=await getRange(it.s,it.a[0],it.a[1],"quran-uthmani"); await sleep(200);
+        const de=await getRange(it.s,it.a[0],it.a[1],"de.bubenheim"); await sleep(200);
+        let deHtml, arHtml;
+        if(it.from){
+          let t=de[0].t; const q=t.search(/sag:/i); if(q>=0) t=t.slice(t.indexOf(":",q)+1).trim(); t=t.replace(/[„“]/g,"");
+          deHtml=t;
+          let a=ar[0].t; const k=a.indexOf(it.from); if(k>=0) a=a.slice(k); arHtml="﴿ "+a+" ﴾";
+        } else {
+          deHtml=de.map(x=>`<span class="vn">(${x.n})</span>${x.t}`).join(" ");
+          arHtml=ar.map(x=>(x.n===1?stripB(x.t):x.t)+` <span class="end">﴿${x.n}﴾</span>`).join(" ");
+        }
+        $("#qd"+i).innerHTML=deHtml; $("#qa"+i).innerHTML=arHtml;
+      }catch(e){ $("#qd"+i).textContent="Die Verse konnten nicht geladen werden. Bitte die Internetverbindung prüfen und die Seite neu laden."; }
+    }
+  }
+  renderDhikr(); renderAdhkar();
+})();
+</script>
+</body>
+</html>
